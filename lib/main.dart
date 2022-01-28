@@ -46,7 +46,7 @@ class CryptoListState extends State {
     Map<String, String> userHeader = {
       "Content-type": "application/json",
       "Accept": "application/json",
-      "X-CMC_PRO_API_KEY": "3427df36-b57c-41ba-864e-eaa223003403"
+      "X-CMC_PRO_API_KEY": ""
     };
     setState(() {
       this._loading = true; //before calling the api, set the loading to true
