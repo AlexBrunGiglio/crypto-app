@@ -176,13 +176,14 @@ class CryptoListState extends State {
       });
     }
 
+    String price = crypto["quote"]["USD"]["price"].toString() + '\$';
     return ListTile(
       leading: _getLeadingWidget(crypto['name'],
           color), // get the first letter of each crypto with the color
       title: Text(crypto['name']), //title to be name of the crypto
       subtitle: Text(
         //subtitle is below title, get the price in 2 decimal places and set style to bold
-        crypto["quote"]["USD"]["price"].toString(),
+        price,
         style: _boldStyle,
       ),
       trailing: new IconButton(
